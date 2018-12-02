@@ -20,10 +20,16 @@ environments.production = {
 };
 
 // Determine which environment was passed (if any)
-var currentEnvironment = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLowerCase() : '';
+var currentEnvironment =
+  typeof(process.env.NODE_ENV) == 'string'
+    ? process.env.NODE_ENV.toLowerCase()
+    : '';
 
 // Check that the passed environment exists, if not, default to staging
-var environmentToExport = typeof(environments[currentEnvironment]) == 'object' ? environments[currentEnvironment] : environments.staging;
+var environmentToExport =
+  typeof(environments[currentEnvironment]) == 'object'
+    ? environments[currentEnvironment]
+    : environments.staging;
 
 // Export the module
 module.exports = environmentToExport;

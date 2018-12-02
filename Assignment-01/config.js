@@ -1,7 +1,7 @@
 /*
  * The configuration file for home assignment 01
  *
- * Tested: Not yet
+ * Tested: OK!
 */
 
 var environments = {};

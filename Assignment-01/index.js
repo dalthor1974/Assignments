@@ -1,7 +1,7 @@
 /*
  * The API for home assignment 01
  *
- * Tested: Not yet
+ * Tested: OK!
 */
 
 // Dependencies
